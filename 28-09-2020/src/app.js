@@ -7,6 +7,10 @@ function createHeart() {
     heart.innerText = "❄️"
 
     document.body.appendChild(heart)
+
+    setTimeout(() => {
+        heart.remove()
+    }, 5000)
 }
 
 setInterval(createHeart, 1000)
